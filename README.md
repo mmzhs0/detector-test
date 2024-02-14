@@ -32,6 +32,10 @@
 $ npm install
 ```
 
+## Swagger UI
+
+After running app Swagger UI will be available on `http://localhost:3000/api-docs/`
+
 ## Running the app
 
 ```bash
@@ -57,16 +61,6 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
