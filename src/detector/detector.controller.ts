@@ -24,8 +24,18 @@ export class DetectorController {
     },
   })
   @ApiResponse({ status: 500, description: 'Server error.' })
-  @ApiQuery({ name: 'time' })
-  @ApiQuery({ name: 'location' })
+  @ApiQuery({
+    name: 'time',
+    required: true,
+    type: 'string',
+    example: '2024-02-13T08:19:19.085692+01:00',
+  })
+  @ApiQuery({
+    name: 'location',
+    required: true,
+    type: 'string',
+    example: 'Europe/Moscow',
+  })
   @HttpCode(200)
   async checkRequest(@Query() params: IQueryParams) {
     return this.detectorService.checkRequest(params);
