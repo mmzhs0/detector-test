@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
 import { DetectorModule } from './detector/detector.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [DetectorModule],
+  imports: [ConfigModule.forRoot(), DetectorModule],
   controllers: [],
   providers: [],
 })
