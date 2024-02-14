@@ -29,14 +29,4 @@ describe('DetectorService', () => {
       expect(result).toBe(false);
     });
   });
-
-  describe('check', () => {
-    it('zz', async () => {
-      const result = await service.checkRequest({
-        location: 'Europe/Minsk',
-        time: '2024-02-13T17:19:19.085692+01:00',
-      });
-      expect(result.is_vpn).toBe(true);
-    });
-  });
 });

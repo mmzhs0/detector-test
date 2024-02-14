@@ -8,7 +8,7 @@ export class DetectorService {
     const { time, location } = params;
     const datetime = (await this.getCountryTime(location)).datetime;
     return {
-      is_vpn: this.compareResults(time, datetime),
+      is_vpn: !this.compareResults(time, datetime),
     };
   }
 
